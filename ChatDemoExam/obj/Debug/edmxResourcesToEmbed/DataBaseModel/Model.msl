@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ChatDemoModelContainer" CdmEntityContainer="ChatDemoEntities">
+    <EntitySetMapping Name="ChatMessage">
+      <EntityTypeMapping TypeName="ChatDemoModel.ChatMessage">
+        <MappingFragment StoreEntitySet="ChatMessage">
+          <ScalarProperty Name="Id_Chat" ColumnName="Id_Chat" />
+          <ScalarProperty Name="Sender_Id" ColumnName="Sender_Id" />
+          <ScalarProperty Name="Chatroom_Id" ColumnName="Chatroom_Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Chatroom">
+      <EntityTypeMapping TypeName="ChatDemoModel.Chatroom">
+        <MappingFragment StoreEntitySet="Chatroom">
+          <ScalarProperty Name="Id_Chatroom" ColumnName="Id_Chatroom" />
+          <ScalarProperty Name="Topic" ColumnName="Topic" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Department">
+      <EntityTypeMapping TypeName="ChatDemoModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="Id_Department" ColumnName="Id_Department" />
+          <ScalarProperty Name="Name_Dapertment" ColumnName="Name_Dapertment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employee">
+      <EntityTypeMapping TypeName="ChatDemoModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="Id_Employee" ColumnName="Id_Employee" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Department_Id" ColumnName="Department_Id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeeChat">
+      <EntityTypeMapping TypeName="ChatDemoModel.EmployeeChat">
+        <MappingFragment StoreEntitySet="EmployeeChat">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Chatroom_Id" ColumnName="Chatroom_Id" />
+          <ScalarProperty Name="Employee_Id" ColumnName="Employee_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
